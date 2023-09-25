@@ -8,9 +8,9 @@ def and_gate(x1, x2):
     else:
         return 0
     
+if __name__ == '__main__':
+    x1 = 1
+    x2 = 0
+    out = and_gate(x1, x2)
 
-x1 = 0
-x2 = 0
-out = and_gate(x1, x2)
-
-print(f'The output of {x1} AND {x2} is {out}')
+    print(f'The output of {x1} AND {x2} is {out}')
