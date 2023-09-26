@@ -46,7 +46,11 @@ class LogicGate:
         self.x1 = x1
         self.x2 = x2
 
-        if x1*self.w1 + x2*self.w2 > self.th:
+        x = np.array([x1, x2])
+        w = np.array([self.w1, self.w2])
+        
+        # if x1*self.w1 + x2*self.w2 > self.th:
+        if np.sum(x*w) > self.th:
             self.out = 1
             return 1
         else:
